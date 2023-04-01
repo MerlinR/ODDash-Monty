@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Monty Dashboard{% endblock %}
+
+{% block setup %}
+
+<link rel="stylesheet" href={{ url_for('.static',filename='css/styles.css') }}>
+{% endblock %}
+
+{% block body %}
+<section>
+  <div class="hero-container">
+    <div class="environment"></div>
+    <h2 class="hero glitch layers" data-text="設.近.計"><span>M.O.N.T.Y</span></h2>
+  </div>
+</section>
+{% endblock %}

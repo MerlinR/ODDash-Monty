@@ -1,0 +1,6 @@
+[plugin]
+title = "Monty Dash"
+description = "Mont's Dash board"
+author = "MerlinR"
+github = "https://github.com/MerlinR/ODDash-Monty"
+version = "0.1"
