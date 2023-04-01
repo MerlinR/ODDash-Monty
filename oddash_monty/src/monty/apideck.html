@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Monty Dashboard{% endblock %}
+
+{% block setup %}
+
+<link rel="stylesheet" href={{ url_for('.static',filename='css/styles.css') }}>
+{% endblock %}
+
+{% block body %}
+<div class="box">
+    <form method="post">
+        <button class="cybr-btn" type="submit" name="action" value="api/shutdown">
+            Shutdown<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">Shutdown_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+        </button>
+
+        <button class="cybr-btn" type="submit" name="action" value="api/reboot">
+            Reboot<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">Reboot_</span>
+            <span aria-hidden class="cybr-btn__tag">R26</span>
+        </button>
+
+        <button class="cybr-btn" type="submit" name="action" value="api/leds">
+            LEDS<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">LEDS_</span>
+            <span aria-hidden class="cybr-btn__tag">R27</span>
+        </button>
+    </form>
+</div>
+{% endblock %}
